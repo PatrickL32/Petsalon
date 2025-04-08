@@ -1,0 +1,31 @@
+
+body{
+    font-family:Arial, sans-serif ;
+}
+a{
+    color:black;
+    text-decoration: none;
+
+}
+img{ max-width:100%
+
+}
+
+
+
+header{
+    display: flex;
+    height: 100px;
+    background-color: rgb(174, 174, 73);
+    justify-content:space-around;
+    align-items:center ;
+}
+header a{
+    margin-right:30px ;
+}
+
+main{
+    font-size:45px;
+    width: 300px;
+    text-align: right;
+}
