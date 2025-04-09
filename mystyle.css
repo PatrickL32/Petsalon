@@ -1,6 +1,8 @@
-
+*{
+    margin:0;
+}
 body{
-    font-family:Arial, sans-serif ;
+    font-family:Arial ;
 }
 a{
     color:black;
@@ -11,21 +13,23 @@ img{ max-width:100%
 
 }
 
-
-
-header{
-    display: flex;
-    height: 100px;
-    background-color: rgb(174, 174, 73);
-    justify-content:space-around;
-    align-items:center ;
+.header {
+    display:flex;
+    height:100px;
+    background-color:#ffcc00;
+    justify-content: space-around;
+    text-align: center;
 }
 header a{
     margin-right:30px ;
-}
-
+}/*main*/
 main{
-    font-size:45px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+main h2{
+    font-size: 45px;
     width: 300px;
     text-align: right;
 }
+

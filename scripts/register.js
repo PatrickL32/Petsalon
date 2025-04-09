@@ -1,14 +1,13 @@
 console.log("register");
 //create an array
 let pets=["fluffy","mittens","nemo"];
-//let pets=["fluff","mittens",""]
+//let pets=["fluff","mittens"," nemo"]
 
 
 //display name function
 function displayNames(){
     for(let i=0;i<pets.length;i++){
-        document.getElementById("results").innerHTML +=`
-        <li>`;//arraynamesofpets [positon]
+        document.getElementById("results").innerHTML += `<li>${pets[i].name}</li>`; // arrayName[position]
     }
 
 
@@ -18,32 +17,39 @@ function init(){
  //main function
 
     //create  pets objects
-    let pet1={
+    let pet1= {
         name: "fluffly",
-        age: 7,
-        gender:"Male",
-        breed:"norwegian"
+        age: 4,
+        gender: "Male",
+        breed:"maine coon",
+        service: "Grooming"//Add service property
     }
 
     let pet2={
-        name: "mitten",
+        name: "mittens",
         age: 5,
         gender:"female",
-        breed:"tuxedo"
+        breed:"domestic shorthair",
+        service:"vet visit"// Add service property
     }
 
     let pet3= {
         name: "nemo",
         age: 8,
         gender:"male",
-        breed:"fish"
+        breed:"fish",
+        service: "Tank Cleaning"//Add service property
     }
 
 //push the pets in the array
 pets.push(pet1,pet2,pet3);
 //display names
-displayNames()
-
+function displayNames(){
+    for(let i = 0; i < pets.length; i++){
+        document.getElementById("results").innerHTML += 
+            `<li>${pets[i].name} - Service: ${pets[i].service}</li>`; // Display name and service
+    }
+}
 }
 
 
