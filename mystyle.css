@@ -1,31 +1,81 @@
-
+*{
+    margin:0;
+}
 body{
-    font-family:Arial, sans-serif ;
+    font-family:Arial ;
 }
 a{
     color:black;
     text-decoration: none;
 
 }
-img{ max-width:100%
+img.centered{
+    display:block;
+    margin:0 auto;
+    max-width: 80%
+}
+.image-container{
+    display:flex;
+    justify-content:center;/*centers horizontally*/
+    align-items: center ;/*centers horizontally*/
+    height:auto;/* Adjust height as needed*/
+    margin: 20px 0;/* optional: Add some spacing around the img*/
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: auto; /* Adjust height as needed */
+    margin: 20px 0; /* Optional: Add spacing around the image */
+}
 
+img.centered {
+    max-width: 80%; /* Ensures the image doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures proper centering */
 }
 
 
-
-header{
-    display: flex;
-    height: 100px;
-    background-color: rgb(174, 174, 73);
-    justify-content:space-around;
-    align-items:center ;
+header {
+    display:flex;
+    height:100px;
+    background-color:#ffcc00;
+    justify-content: space-around;
+    text-align: center;
 }
 header a{
     margin-right:30px ;
 }
-
+/*main*/
 main{
-    font-size:45px;
-    width: 300px;
-    text-align: right;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
 }
+
+.myForm{ 
+    background-color:lightgray;
+    padding:20px;
+    margin:20px;
+    border-radius:10px;
+}
+.input-container{
+    margin:20px;
+}
+.input-container input{
+    width:50%;
+    border:none;
+    padding: 3px;
+}
+main h2{
+    font-size: 24px; /* Smaller font size */
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Add spacing below */
+}
+main p {
+    font-size: 16px; /* Smaller font size for paragraphs */
+    text-align: center; /* Center the text */
+    line-height: 1.5; /* Improve readability */
+    margin: 10px 0; /* Add spacing above and below */
+}
+

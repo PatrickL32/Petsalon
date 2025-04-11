@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header> 
+        <h1> the fashion pet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Register a new pet</h2>
+
+        <div class="myForm">
+            <div class="input-container">
+                <label>Name:</label>
+                <input type="Text" id="txtName">
+            </div>
+
+            <div class="input-container">
+                <label>Age:</label>
+                <input type="number" id="txtAge">
+            </div>
+
+            <div class="input-container">
+                <label>Gender:</label>
+                <input type="text" id ="txtGender">
+            </div>
+
+            <div class = "input-container">
+                <label>Breed:</label>
+                <input type="Breed" id ="txtBreed">
+            </div>
+            
+            <div>
+                <button onclick="register();">Register</button>
+            </div>
+        </div>
+
+        <h2>Pets</h2>
+        <div id="results"></div>
+        </main>
+
+
+    <script src="./scripts/register.js"></script>
+</body>
+</html>
