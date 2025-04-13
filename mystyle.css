@@ -54,18 +54,22 @@ main{
 }
 
 .myForm{ 
-    background-color:lightgray;
+    background-color:lightblue;
     padding:20px;
-    margin:20px;
+    margin:20px auto;
+    width:80%;
     border-radius:10px;
 }
 .input-container{
-    margin:20px;
+    margin:20px auto;
+    text-align: center;
 }
 .input-container input{
-    width:50%;
+    display: inline-block;
+    width:80%;
     border:none;
-    padding: 3px;
+    padding: 5px;
+    font-size: 14px;
 }
 main h2{
     font-size: 24px; /* Smaller font size */
@@ -78,4 +82,10 @@ main p {
     line-height: 1.5; /* Improve readability */
     margin: 10px 0; /* Add spacing above and below */
 }
-
+footer{
+    background-color: #ffcc00;
+    color: white;
+    height: 100px;
+    align-items:center;
+    text-align: center;
+}
