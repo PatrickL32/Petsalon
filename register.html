@@ -43,39 +43,45 @@
                 <input type ="text" id="txtservice">
             </div>
             <div>
-                <button onclick="register();">Register</button>
+            
             </div>
+            <button class="btn btn-warning" onclick="register();">Register</button>
+        </div>
         </div>
 
         <h2> registered Pets</h2>
 
         <div id="results"></div>
         
-        <table class="table table-bordered ">
+        <table class="table"> 
             <table style="border-collapse: collapse; width: 100%;">
                 <tr style="border: 1px solid black;">
-                  <td>Name</td>
-                  <td>Phone Number</td>
+                <td>Name</td>
+                <td> Service</td>
+                <td>Breed</td>
+                <td>Age</td>
+                <td>Gender</td>
+                <tbody id="results"></tbody>
+
                 </tr>
                 <tr style="border: 1px solid black;">
-                  <td>Pet</td>
-                  <td>service</td>
+                
                 </tr>
-              </table>
-          <thead>
+            </table>
+        <thead>
             <tr>
-              
+            
             </tr>
-          </thead>
-          <tbody id="tableBody">
-           
-          </tbody>
+        </thead>
+        <tbody id="tableBody">
+        
+        </tbody>
         </table>
         
 </form>
 
 
-<script src="script.js"></script> <!-- Update with your actual file name -->
+
 
 
 
@@ -86,6 +92,6 @@
         </main>
 
 
-        <script src="register.js"></script>
+        <script src="./scripts/register.js"></script>
 </body>
 </html>
