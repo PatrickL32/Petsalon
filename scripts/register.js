@@ -22,38 +22,41 @@ function register(){
     //push the newPet
     pets.push(newPet);
     //display the pets
-    displayNames();
+    displayRow();
 }
 
 //display name function
 function displayRow(pet) {
+  console.log("Displaying pets...");
   document.getElementById("results").innerHTML="";
+  let row = ""
 
-  for(let i=0;i<pets.length;i++){
-      document.getElementById("results").innerHTML+=`<li>${pets[i].name} - ${pets[i].age}</li>`;// arrayName[position]
-  let tableBody = document.querySelector("tbody"); // Target the table body element
-  let row = `
-    <tr id="${i}">
-    <th scope="row">${pet.id}</th>
-    <td>${pet[i].name}</td>
-    <td>${pet[i].age}</td>
-    <td>${pet[i].gender}</td>
-        <td>${pet[i].service}</td>
-        <td><button class = "btn btn-danger btn-sm" "onclick="deletepet(${i})">Delete</button></td>
-  <tr>`
-}
+  for(let i=0; i<pets.length; i++){
+     // document.getElementById("results").innerHTML+=`<li>${pets[i].name} - ${pets[i].age}</li>`;// arrayName[position]
+      //let tableBody = document.querySelector("tbody"); // Target the table body element
 
-document.getElementById("results").innerHTML= results;
-  tableBody.innerHTML += row; 
+      row += `
+        <tr id="${i}">
+          <td>${pets[i].name}</td>
+          <td>${pets[i].age}</td>
+          <td>${pets[i].gender}</td>
+          <td>${pets[i].service}</td>
+          <td><button class="btn btn-danger btn-sm" onclick="deletePet(${i});">Delete</button></td>
+        </tr>
+      `;
+  }
+
+  document.getElementById("results").innerHTML= row;
+  //tableBody.innerHTML += row; 
 }
 
 function deletePet(petID) {
-console.log("Delete a pet..." +petID);
-//delete form HTML
-document .getElementById(petID).remove();
-//delete from the array
-pets.splice(petID,1);
-displayPets()
+  console.log("Delete a pet..." +petID);
+  //delete form HTML
+  document .getElementById(petID).remove();
+  //delete from the array
+  pets.splice(petID,1);
+  displayRow();
 } 
 
 
@@ -61,7 +64,7 @@ displayPets()
 
 
 // Clearing previous results if needed
-function init(){}
+function init(){
     // create pet objects
     let pet1=new Pet("Fluffy",7,"Female","Siberian","nailtrimming,brushing and bath");
     let pet2=new Pet("Mittens",4,"Female","tuxedo","nailtrimming and deluxe brushing");
@@ -69,4 +72,8 @@ function init(){}
     //push the pets in the array
     pets.push(pet1,pet2,pet3);
 
+    displayRow();
+
 }
+
+window.onload = init;
