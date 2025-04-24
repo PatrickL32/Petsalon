@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <h1> The Fashion Pet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+    <main>
+        <h2> Services</h2>
+        <p>We offer a variety of services for your pets,including grooming, training, daycare and boarding.</p>
+        <div class="image-container">
+            <img src="./img/dog-grooming-logo.webp" alt="this is grooming" class="centered">
+            <img src="./img/pet heart.jpeg" alt=" this is care" class="centered">
+            <img src="./img/training.jpg" alt="this is training" class="centered">
+        </div>
+        <div class="dropdown-container">
+            <label for="services-dropdown">Choose a service:</label>
+            <select id="services-dropdown">
+                <option value="" disabled selected>Select a service</option>
+            </select>
+            <div id="service-details" class="service-details">
+                <!-- Pricing and package details will be displayed here -->
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="./services.js"></script>
+        </div>
+    </main>
+</body>
+</html>

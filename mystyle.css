@@ -12,30 +12,35 @@ a{
 }
 img.centered{
     display:block;
-    margin:0 auto;
-    max-width: 80%
+    max-width: 30%;
+    height: auto;
 }
-.image-container{
-    display:flex;
-    justify-content:center;/*centers horizontally*/
-    align-items: center ;/*centers horizontally*/
-    height:auto;/* Adjust height as needed*/
-    margin: 20px 0;/* optional: Add some spacing around the img*/
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Aligns the images vertically */
+    gap: 20px; /* Adds horizontal spacing between images */
+    margin: 0px 0; /* Adjust vertical spacing for the container */
+    padding: 0; /* Remove any extra padding */
 }
 .image-container {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
     height: auto; /* Adjust height as needed */
-    margin: 20px 0; /* Optional: Add spacing around the image */
+    margin: 0px 0; /* Optional: Add spacing around the image */
 }
 
 img.centered {
-    max-width: 80%; /* Ensures the image doesn't overflow */
+    max-width: 16%; /* Ensures the image doesn't overflow */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Ensures proper centering */
 }
 
+.image-container + .image-container {
+    margin-top: 5px; /* Reduce space between consecutive image containers */
+}
 
 header {
     display:flex;
@@ -83,10 +88,17 @@ main p {
     line-height: 1.5; /* Improve readability */
     margin: 10px 0; /* Add spacing above and below */
 }
-footer{
-    background-color: #ffcc00;
-    color: white;
-    height: 100px;
-    align-items:center;
-    text-align: center;
+.dropdown-container {
+    margin: 20px auto; /* Center the container horizontally */
+    text-align: center; /* Center the content inside the container */
+    max-width: 400px; /* Optional: Limit the width of the dropdown container */
+}
+
+#services-dropdown {
+    width: 100%; /* Make the dropdown take the full width of the container */
+    padding: 10px; /* Add padding for better usability */
+    font-size: 16px; /* Adjust the font size */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
